@@ -1,19 +1,23 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <v-app>
+      <v-toolbar-title id="app">OS GRANDES WORDS DA VIDA</v-toolbar-title>
+      <v-content>
+        <HomePage />
+      </v-content>
+    </v-app>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HomePage from "./components/HomePage";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    HomePage,
+  },
+};
 </script>
 
 <style>
@@ -22,7 +26,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #19426b;
   margin-top: 60px;
 }
 </style>
